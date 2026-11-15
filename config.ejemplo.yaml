@@ -1,0 +1,42 @@
+# Configuración de ejemplo. Copia este archivo como "config.yaml" y edítalo.
+# Luego corre: python -m cine_miniserie crear --config config.yaml
+
+idea: >
+  En un rancho de Jalisco, Don Ernesto, el dueño, se disfraza de peón para
+  descubrir cómo tratan sus capataces a los trabajadores. Nadie sabe quién es
+  hasta que un trabajador enfermo, Julián, le cuenta la verdad.
+
+num_escenas: 5
+
+estilo: >
+  cinematográfico fotorrealista, luz cálida dramática, paleta dorada y madera
+  oscura, encuadre de cine, 16:9
+
+# cinematografico = zoom/pan lento sobre las imágenes (gratis, ilimitado).
+# real = clips de movimiento real (necesita clave en .env, ver .env.ejemplo).
+movimiento: cinematografico
+
+# Segundos de fundido cruzado entre escenas (que no se vean los cortes).
+fundido_segundos: 1.0
+
+# Velocidad de las voces: "-5%" es un poco más lento y dramático.
+velocidad_audio: "-5%"
+
+# Portada con el título al inicio (true/false).
+portada: true
+
+# Semilla para que las imágenes salgan parecidas si repites el proyecto.
+semilla: 42
+
+# Carpeta donde se guarda todo el proyecto.
+salida: mi-miniserie
+
+# Voz del narrador (edge-tts). Déjala vacía para la de por defecto.
+voz_narrador: es-MX-DaliaNeural
+
+# Si quieres fijar la voz de un personaje, ponlo aquí (nombre: voz).
+# Voces en español de edge-tts, por ejemplo:
+# voces:
+#   Don Ernesto: es-MX-JorgeNeural
+#   Julián: es-ES-AlvaroNeural
+voces: {}

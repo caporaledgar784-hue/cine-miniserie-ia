@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Claves y configuración local (nunca se suben)
+.env
+config.yaml
+
+# Proyectos generados (guiones, imágenes, audios y videos)
+mi-miniserie/
+proyectos/
+proyecto.json
+*.mp4
+*.mp3
+*.jpg
+*.jpeg
+*.png
+*.webp
